@@ -1,0 +1,26 @@
+FileVersion = 1
+Dependencies = {corlib = "*", SDL2 = "*"}
+
+[Project]
+Name = "Chip8"
+TargetType = "BeefWindowsApplication"
+StartupObject = "Chip8.Program"
+
+[Configs.Debug.Win64]
+TargetDirectory = "$(WorkspaceDir)/dist"
+TargetName = "$(ProjectName)_d"
+BeefLibType = "DynamicDebug"
+
+[Configs.Release.Win64]
+TargetDirectory = "$(WorkspaceDir)/dist"
+
+[Configs.Paranoid.Win64]
+TargetDirectory = "$(WorkspaceDir)/dist"
+
+[Configs.Paranoid.aaa]
+OtherLinkFlags = ""
+CLibType = "Static"
+BeefLibType = "Static"
+
+[Configs.Test.Win64]
+TargetDirectory = "$(WorkspaceDir)/dist"

@@ -1,0 +1,5 @@
+FileVersion = 1
+Projects = {Chip8 = {Path = "."}}
+
+[Workspace]
+StartupProject = "Chip8"
